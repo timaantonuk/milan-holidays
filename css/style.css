@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("../img/background.png");
+  color: #ffffff;
+}
+
+.container {
+  width: 1028px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 51px;
+}
+.logo svg {
+  fill: #ffffff;
+  width: 53px;
+  height: 47px;
+}
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-wrapper:hover {
+  color: #f26522;
+}
+
+.logo-wrapper:hover svg {
+  fill: #f26522;
+}
+
+.header-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.header-contacts a {
+  text-decoration: none;
+  margin: 0;
+  color: #ffffff;
+}
+
+.header-contacts a:hover {
+  color: #f26522;
+}
+
+.header-text p {
+  margin: 0;
+  font-size: 29px;
+  font-weight: 700;
+}
+
+.header-text p:nth-child(2) {
+  font-size: 18px;
+}
+
+.header-phone {
+  margin-top: 19px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 261px;
+  row-gap: 37px;
+  column-gap: 61px;
+  margin-top: 22px;
+}
+
+.main p {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 49px;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.card-link:nth-child(2) p {
+  margin-top: 10px;
+}
+
+.card-link > div {
+  position: relative;
+}
+.card-link:hover .hidden {
+  opacity: 1;
+  bottom: 46px;
+}
+
+.card-link:hover > div > p {
+  color: #f26522;
+}
+.hidden {
+  background-color: #f26522;
+  color: #ffffff;
+  position: absolute;
+  opacity: 0;
+  height: 55px;
+  width: 99.5%;
+  bottom: 0px;
+  display: block;
+  transition: 0.3s opacity ease-in-out;
+  transition: 0.3s bottom ease-in-out;
+}
+.hidden h3,
+.hidden h4 {
+  margin: 0 !important;
+  font-weight: 400;
+}
+.hidden p {
+  font-size: 10px !important;
+  text-align: left;
+  margin: 7px 0px 0px 16px !important;
+}
+.hidden > div {
+  display: flex;
+  width: 100%;
+  margin-top: 8px;
+  padding: 0px 14px 0px 16px;
+  justify-content: space-between;
+}
+
+.hidden > div > h4::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* фото sightseeing изначально меньше остальных, поэтому немного убрал ему марджин */
